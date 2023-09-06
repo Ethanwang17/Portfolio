@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Ethan Wang" />
+		<meta
+			name="Description"
+			content="This is Ethan Wang's portfolio website"
+		/>
+		<title>Ethan Wang</title>
+		<link href="css/style.css" rel="stylesheet" />
+		<script
+			src="https://kit.fontawesome.com/965f160d9e.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./images/favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./images/favicon_io/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./images/favicon_io/site.webmanifest" />
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<div class="menu-btn" onclick="toggleMenu()">
+					<div class="menu-btn__burger"></div>
+				</div>
+				<ul class="dropdown-menu" id="menu">
+					<li class="active">
+						<i class="fa-solid fa-house"></i
+						><a href="index.html">Home</a>
+					</li>
+					<li>
+						<i class="fa-solid fa-address-card"></i
+						><a href="about.html">About</a>
+					</li>
+					<li>
+						<i class="fa-solid fa-file"></i
+						><a href="resume.html">Resume</a>
+					</li>
+					<!-- Add more menu items as needed -->
+				</ul>
+			</nav>
+			<div class="circle-container">
+				<div class="grey-circle">
+					<img
+						src="./images/ewAvatar.png"
+						alt="Your Image"
+						class="circle-image"
+					/>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="homepage-desc">
+				<!-- <h1>Hi, I'm Ethan</h1> -->
+				<div class="rotating-text">
+					<p>Hi, I'm</p>
+					<p>
+						<span class="word w-1">Ethan</span>
+						<span class="word w-2">a student</span>
+						<span class="word w-3">a designer</span>
+						<span class="word w-4">a developer</span>
+					</p>
+				</div>
+				<div class="location">
+					<p><i class="fa-solid fa-location-dot"></i> Seattle, WA</p>
+				</div>
+				<div class="description">
+					<p>
+						I am an ambitious Informatics student at the University
+						of Washington, always seeking new entrepreneurial
+						ventures and using my creativity and problem-solving
+						skills to excel
+					</p>
+				</div>
+			</div>
+
+			<div class="card-container">
+				<div class="card">
+					<a href="spark.html">
+					<h2>Spark</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					</p>
+					<span>Case Study</span>
+					<div class="pic"></div>
+					<button></button>
+					</a>
+				</div>
+				<div class="card card2">
+					<a href="spark.html">
+
+					<h2>Baby Steps</h2>
+					<p>
+						Teaching young minds important life skills through
+						interactive games and stories.
+					</p>
+					<span>Case Study</span>
+					<div class="pic"></div>
+					<button></button>
+					</a>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="social-icons">
+				<a
+					href="https://github.com/Ethanwang17"
+					class="icon-link"
+					target="_blank"
+					><i class="fa-brands fa-github"></i
+				></a>
+				<a
+					href="https://www.linkedin.com/in/ethanwang17"
+					class="icon-link"
+					target="_blank"
+					><i class="fa-brands fa-linkedin-in"></i
+				></a>
+				<a
+					href="mailto: 2ethanwang@gmail.com"
+					class="icon-link"
+					target="_blank"
+					><i class="fa-solid fa-envelope"></i
+				></a>
+			</div>
+			<div class="copyright">
+				Copyright &copy; 2023 Ethan Wang. All rights reserved.
+			</div>
+		</footer>
+
+		<script src="main.js"></script>
+	</body>
+</html>
