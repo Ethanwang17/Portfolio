@@ -552,10 +552,18 @@ footer {
 }
 .card-container .card2 .pic {
 	background-image: url("https://img.freepik.com/free-vector/colorful-abstract-background-concept_23-2148449111.jpg?w=996&t=st=1690660553~exp=1690661153~hmac=2cacdd54019b4d3baf877ff36086648ad771c1cbaf5307abc0561e447042becf");
-	transition: 0.3s ease;
 }
 .card-container .card2 button {
 	background-color: #0d1282;
+}
+
+.card-container .card3 .pic {
+	background-image: url("https://xscape.web.app/imgs/car-vector-4-1.png");
+	background-position: center -75px;
+}
+
+.card-container .card3 button {
+	background-color: #191F0C;
 }
 /* Card container END */
 
@@ -720,6 +728,30 @@ footer {
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 }
+.box2{
+	flex: 1;
+    width: 150px; /* Set the width and height of the square box */
+    height: 250px; /* Set the width and height of the square box */
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 75px; /* Add spacing between boxes */
+    text-align: center; /* Align text in the center */
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0)
+	);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+.box2 .issue{
+	font-weight: 500;
+}
 
 /* Apply margin only to the right side of the last box in the row */
 .box:last-child {
@@ -863,7 +895,30 @@ footer {
     /* Add other styling properties as needed */
 }
 
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative; /* Add position relative to enable horizontal scrollbar */
+}
 
+.carousel {
+    display: flex;
+    width: 200%; /* Make the carousel container twice as wide to accommodate all images */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
 
+.carousel img {
+    width: 50%; /* Adjust the width as needed */
+    height: auto;
+}
 
+.wireframe {
+	padding-top: 40px;
+}
+
+.website-link{
+	text-decoration: underline;
+	color: black;
+}
+  
 /* Project End */

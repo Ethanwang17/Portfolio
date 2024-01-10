@@ -1,6 +1,59 @@
 // Rotating text START
 "use strict";
 
+const secondCarouselntainer = document.getElementById("carousel1");
+const carousel = secondCarouselntainer.querySelector('.carousel');
+let scrollLeft = 0;
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const scrollWidth = carousel.scrollWidth;
+    const containerWidth = carousel.clientWidth;
+
+    if (scrollLeft < scrollWidth - containerWidth) {
+        scrollLeft = scrollTop * 2; // Adjust the scroll speed as needed
+        carousel.style.transform = `translateX(-${scrollLeft}px)`;
+    }
+});
+
+const firstCarouselContainer = document.getElementById("carousel2");
+const firstPhotoCarousel = firstCarouselContainer.querySelector('.carousel');
+const images = firstPhotoCarousel.querySelectorAll('img');
+
+// Calculate the total width of all images in the carousel
+const totalWidth = Array.from(images).reduce((acc, img) => {
+    return acc + img.clientWidth;
+}, 0);
+
+// Clone the images to create an infinite loop
+images.forEach(img => {
+    const clone = img.cloneNode(true);
+    firstPhotoCarousel.appendChild(clone);
+});
+
+let scrollPosition = 0;
+
+function scrollCarousel() {
+    // Increment the scroll position
+    scrollPosition += 1;
+
+    // Reset the scroll position when it reaches the end
+    if (scrollPosition >= totalWidth) {
+        scrollPosition = 0;
+    }
+
+    // Apply the scroll position to the carousel
+    firstPhotoCarousel.style.transform = `translateX(-${scrollPosition}px)`;
+
+    // Request animation frame for smooth scrolling
+    requestAnimationFrame(scrollCarousel);
+}
+
+// Start the scrolling animation
+scrollCarousel();
+
+
+
   let words = document.querySelectorAll(".word");
   words.forEach((word) => {
     let letters = word.textContent.split("");
@@ -65,5 +118,4 @@ function toggleMenu() {
 document.getElementById("back-to-home").addEventListener("click", function () {
     window.location.href = "index.html";
   });
-
 
